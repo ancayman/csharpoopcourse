@@ -11,7 +11,7 @@ namespace Snake
         public int x;
         public int y;
         public char sym;
-        
+
         public Point()
         {
         }
@@ -40,13 +40,13 @@ namespace Snake
             {
                 x = x - offset;
             }
-            else if (direction == Direction.DOWN)
-            {
-                x = x + offset;
-            }
             else if (direction == Direction.UP)
             {
-                x = x - offset;
+                y = y - offset;
+            }
+            else if (direction == Direction.DOWN)
+            {
+                y = y + offset;
             }
         }
 
